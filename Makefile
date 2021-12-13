@@ -1,8 +1,5 @@
 SHELL=/bin/bash -e
 
-wheel: lint clean
-	./setup.py bdist_wheel
-
 test_deps:
 	pip install coverage flake8 mypy sphinx wheel
 
@@ -32,6 +29,6 @@ clean:
 	-rm -rf build dist
 	-rm -rf *.egg-info
 
-.PHONY: wheel lint test test_deps docs build install clean
+.PHONY: lint test test_deps docs build install clean
 
 include common.mk
