@@ -13,7 +13,7 @@ typecheck: test_deps
 	mypy --strict --no-warn-unused-ignores src
 
 test: lint typecheck
-	coverage run --branch --include 'src/*' setup.py test
+	coverage run --branch --include 'src/*' -m unittest discover -s test -v
 
 init_docs: test_deps
 	cd docs; sphinx-quickstart
