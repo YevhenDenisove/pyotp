@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="pyotp",
-    version="2.6.0",
+    version="2.7.0",
     url="https://github.com/pyotp/pyotp",
     license="MIT License",
     author="PyOTP contributors",

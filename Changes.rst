@@ -1,3 +1,10 @@
+Changes for v2.7.0 (2022-09-11)
+===============================
+
+-  Support Steam TOTP (#142)
+
+-  Build, test, and documentation updates
+
 Changes for v2.6.0 (2021-02-04)
 ===============================
 
