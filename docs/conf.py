@@ -8,7 +8,7 @@ copyright = "PyOTP contributors"
 author = "PyOTP contributors"
 version = ""
 release = ""
-language = None
+language = "en"
 master_doc = "index"
 extensions = ["sphinx.ext.autodoc", "sphinx.ext.viewcode"]
 source_suffix = [".rst", ".md"]
@@ -20,6 +20,7 @@ if "readthedocs.org" in os.getcwd().split("/"):
         fh.write("Documentation for this project has moved to https://pyauth.github.io/pyotp")
 else:
     import guzzle_sphinx_theme
+
     html_theme_path = guzzle_sphinx_theme.html_theme_path()
     html_theme = "guzzle_sphinx_theme"
     html_theme_options = {
@@ -31,6 +32,6 @@ else:
             "logo-text.html",
             # "globaltoc.html",
             "localtoc.html",
-            "searchbox.html"
+            "searchbox.html",
         ]
     }

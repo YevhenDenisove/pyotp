@@ -1,5 +1,5 @@
-from typing import Optional
 import hashlib
+from typing import Optional
 
 from ..totp import TOTP
 
@@ -12,8 +12,7 @@ class Steam(TOTP):
     Steam's custom TOTP. Subclass of `pyotp.totp.TOTP`.
     """
 
-    def __init__(self, s: str, name: Optional[str] = None,
-                 issuer: Optional[str] = None, interval: int = 30) -> None:
+    def __init__(self, s: str, name: Optional[str] = None, issuer: Optional[str] = None, interval: int = 30) -> None:
         """
         :param s: secret in base32 format
         :param interval: the time interval in seconds for OTP. This defaults to 30.
