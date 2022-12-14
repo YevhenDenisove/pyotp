@@ -20,7 +20,7 @@ minimum, application implementers should follow this checklist:
 - Ensure HOTP/TOTP secret confidentiality by storing secrets in a controlled access database
 - Deny replay attacks by rejecting one-time passwords that have been used by the client (this requires storing the most 
   recently authenticated timestamp, OTP, or hash of the OTP in your database, and rejecting the OTP when a match is seen)
-- Throttle (rate limit) brute-force attacks against your application's login functionality
+- Throttle (rate limit) brute-force attacks against your application's login functionality (see RFC 4226, section 7.3)
 - When implementing a "greenfield" application, consider supporting
   `FIDO U2F <https://en.wikipedia.org/wiki/Universal_2nd_Factor>`_/`WebAuthn <https://www.w3.org/TR/webauthn/>`_ in
   addition to HOTP/TOTP. U2F uses asymmetric cryptography to avoid using a shared secret design, which strengthens your
