@@ -1,3 +1,12 @@
+Changes for v2.8.0 (2022-12-13)
+===============================
+
+-  Modify OTP generation to run in constant time (#148)
+
+-  Documentation improvements
+
+-  Drop Python 3.6 support; introduce Python 3.11 support
+
 Changes for v2.7.0 (2022-09-11)
 ===============================
 
